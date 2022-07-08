@@ -65566,7 +65566,7 @@ $.ati=null
 $.atc=null
 $.atd=null
 $.ate=null
-$.Bt=A.a(["Flutter","RFID,Smart EnviromentTensorflow,Scikit learn","Django","Native Android"],t.s)
+$.Bt=A.a(["Flutter","RFID,Smart Enviroment","Tensorflow,Scikit learn","Django","Native Android"],t.s)
 $.axz=A.aS(["dark",B.a3,"light",B.cg],t.N,A.X("nk"))
 $.aci=null
 $.ar0=A.y(t.S,A.X("ayy"))})();(function lazyInitializers(){var s=hunkHelpers.lazyFinal,r=hunkHelpers.lazy
