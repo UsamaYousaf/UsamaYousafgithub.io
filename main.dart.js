@@ -6540,7 +6540,7 @@ s+=j
 r=s
 p=!0}else if(o<127&&(B.C7[o>>>4]&1<<(o&15))!==0){if(p&&65<=o&&90>=o){if(q==null)q=new A.cr("")
 if(r<s){q.a+=B.c.Y(a,r,s)
-r=s}p=!1}++s}else if(o<=93&&(B.ma[o>>>4]&1<<(o&15))!==0)A.rN(a,s,"Invalid character")
+r=s}p=!1}++s}else if(o<=93&&(B.mb[o>>>4]&1<<(o&15))!==0)A.rN(a,s,"Invalid character")
 else{if((o&64512)===55296&&s+1<c){i=B.c.aD(a,s+1)
 if((i&64512)===56320){o=(o&1023)<<10|i&1023|65536
 j=2}else j=1}else j=1
@@ -6619,7 +6619,7 @@ if(o<127&&(d[o>>>4]&1<<(o&15))!==0)++r
 else{if(o===37){n=A.acV(a,r,!1)
 if(n==null){r+=3
 continue}if("%"===n){n="%25"
-m=1}else m=3}else if(s&&o<=93&&(B.ma[o>>>4]&1<<(o&15))!==0){A.rN(a,r,"Invalid character")
+m=1}else m=3}else if(s&&o<=93&&(B.mb[o>>>4]&1<<(o&15))!==0){A.rN(a,r,"Invalid character")
 m=i
 n=m}else{if((o&64512)===55296){l=r+1
 if(l<c){k=B.c.aD(a,l)
@@ -50653,7 +50653,7 @@ A.eq.prototype={
 i(a){return"ModifierKey."+this.b}}
 A.wF.prototype={
 ga3e(){var s,r,q,p=A.y(t.xS,t.LE)
-for(s=0;s<9;++s){r=B.mb[s]
+for(s=0;s<9;++s){r=B.mc[s]
 if(this.a2K(r)){q=this.K4(r)
 if(q!=null)p.p(0,r,q)}}return p},
 KT(){return!0}}
@@ -50695,7 +50695,7 @@ i=$.fL()
 if(i!=null)i.$1(new A.bo(r,q,"services library",j,null,!1))}}return!1},
 YI(a){var s,r,q,p,o,n,m,l,k,j,i=a.c,h=i.ga3e(),g=t.v3,f=A.y(g,t.bd),e=A.aL(g),d=this.d,c=A.kz(new A.aZ(d,A.m(d).h("aZ<1>")),g),b=a instanceof A.js
 if(b)c.D(0,i.gex())
-for(s=null,r=0;r<9;++r){q=B.mb[r]
+for(s=null,r=0;r<9;++r){q=B.mc[r]
 p=$.akp()
 o=p.j(0,new A.cb(q,B.b0))
 if(o==null)continue
@@ -60158,7 +60158,7 @@ $S:394}
 A.L6.prototype={
 E(a,b){var s,r=null,q=A.e4(b,!0,t.R),p=A.e4(b,!0,t.At),o=q.a===B.a3,n=o?B.bd:B.j,m=$.ce.a
 o=A.a([B.ww,B.lD,A.ag9(A.mh(B.zR,m,r),B.Lf,A.ahl(m,B.e0,new A.a6A(q),o)),B.lD],t.p)
-m=new A.en(B.mc,t.ly)
+m=new A.en(B.md,t.ly)
 B.b.K(o,m.gcw(m).d9(0,new A.a6B(p,b),t.l7))
 m=$.ce.a
 s=m.a
@@ -60190,7 +60190,7 @@ A.Le.prototype={
 E(a,b){var s,r,q,p=null,o=A.e4(b,!0,t.R),n=A.xL(0.5,p),m=o.a===B.a3?B.m:B.j,l=$.acl
 l.toString
 l=A.a([B.fL,l],t.p)
-s=new A.en(B.mc,t.ly)
+s=new A.en(B.md,t.ly)
 B.b.K(l,s.gcw(s).d9(0,new A.a6S(),t.l7))
 s=$.ce.a
 r=s.a
@@ -60250,7 +60250,7 @@ q=$.aX
 return A.bz(p,A.cG(A.a([B.lt,B.lx,s,r,A.bE(A.FJ(A.b3("See More",$.to,p,p),new A.a7f()),q*14*0.77+14,q*50*0.77+50)],t.p),B.ae,B.p,B.t),p,p,p,p,o,p)}}
 A.a7e.prototype={
 $1(a){var s=a.gn(a),r=B.mf[a.gbs(a)],q=B.mk[a.gbs(a)],p=B.ml[a.gbs(a)]
-return A.YM(s,B.me[a.gbs(a)],r,null,q,p)},
+return A.YM(s,B.ma[a.gbs(a)],r,null,q,p)},
 $S:397}
 A.a7f.prototype={
 $0(){return A.hv(A.e9("https://github.com/UsamaYousaf",0,null))},
@@ -60262,7 +60262,7 @@ s=$.aX
 return A.cG(A.a([B.lt,B.lx,r,q,A.bE(A.FJ(A.b3("See More",$.to,null,null),new A.YB()),s*14*0.77+14,s*50*0.77+50)],t.p),B.ae,B.p,B.t)}}
 A.YA.prototype={
 $3(a,b,c){var s=B.mf[c],r=B.mk[c],q=B.ml[c]
-return new A.bv(B.zn,A.YM(null,B.me[c],s,null,r,q),null)},
+return new A.bv(B.zn,A.YM(null,B.ma[c],s,null,r,q),null)},
 $S:76}
 A.YB.prototype={
 $0(){return A.hv(A.e9("https://github.com/UsamaYousaf",0,null))},
@@ -63674,7 +63674,8 @@ B.zD=new A.fn(5)
 B.zE=new A.fn(7)
 B.lR=new A.fn(8)
 B.m9=A.a(s([B.bS,B.zB,B.zC,B.x,B.aP,B.zD,B.ao,B.zE,B.lR]),A.X("r<fn>"))
-B.ma=A.a(s([0,0,32776,33792,1,10240,0,0]),t.t)
+B.ma=A.a(s(["Letterbird provides a unique communication experience by merging traditional correspondence with technological advances","Harness the power of Artificial Intelligence Stop adult content addiction through Quit Must to more than double your quitting chances and conquer adult content cravings forever!","Live Sport Stream App is a sport streaming app where you can watch thousands of live events and shows from the networks plus get scores, on-demand news, highlights, and expert analysis. ","IBO App is a Tv Streaming App With this you can watch Live TV, Movies, Series, and TV CatUp from IPTV Service Provider on Android Phone, Android Boxes, Fire TV Sticks, Nvidia Shield TV."]),t.s)
+B.mb=A.a(s([0,0,32776,33792,1,10240,0,0]),t.t)
 B.vB=new A.o4()
 B.tM=new A.xh(1,"page")
 B.tN=new A.ha(B.G,B.tM)
@@ -63689,7 +63690,7 @@ B.ru=new A.eq(5,"numLockModifier")
 B.rv=new A.eq(6,"scrollLockModifier")
 B.rw=new A.eq(7,"functionModifier")
 B.EM=new A.eq(8,"symbolModifier")
-B.mb=A.a(s([B.cL,B.cM,B.cN,B.cO,B.rt,B.ru,B.rv,B.rw,B.EM]),A.X("r<eq>"))
+B.mc=A.a(s([B.cL,B.cM,B.cN,B.cO,B.rt,B.ru,B.rv,B.rw,B.EM]),A.X("r<eq>"))
 B.bD=new A.dp(1,"fuchsia")
 B.bk=new A.dp(3,"linux")
 B.bl=new A.dp(5,"windows")
@@ -63697,9 +63698,8 @@ B.B5=A.a(s([B.aU,B.bD,B.au,B.bk,B.b6,B.bl]),A.X("r<dp>"))
 B.fh=A.a(s(["https://www.umt.edu.pk/","https://geeklone.com/","https://community.upwork.com/"]),t.s)
 B.fi=A.a(s([60,70,30,70]),t.G)
 B.Bh=A.a(s(["https://www.linkedin.com/in/usamayousaf01/","https://github.com/UsamaYousaf","https://stackoverflow.com/users/12578999/usama-yousaf"]),t.s)
-B.mc=A.a(s(["HOME","ABOUT","SERVICES","PROJECTS","CONTACT"]),t.s)
+B.md=A.a(s(["HOME","ABOUT","SERVICES","PROJECTS","CONTACT"]),t.s)
 B.Bm=A.a(s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0]),t.G)
-B.me=A.a(s(["Letterbird provides a unique communication experience by merging traditional correspondence with technological advances","Harness the power of Artificial Intelligence Stop adult content addiction through Quit Must to more than double your quitting chances and conquer adult content cravings forever! In this application you have to control to open adult content website and being focus on health in this adult content app.","Live Sport Stream App is a sport streaming app where you can watch thousands of live events and shows from the networks plus get scores, on-demand news, highlights, and expert analysis. Subscribe to the streaming service for live sports, exclusive originals, premium articles, fantasy tools, and more.","IBO App is a Tv Streaming App With this you can watch Live TV, Movies, Series, and TV CatUp from IPTV Service Provider on Android Phone, Android Boxes, Fire TV Sticks, Nvidia Shield TV."]),t.s)
 B.uP=new A.hz("Name","Usama ",null)
 B.kH=new A.hz("Age","23",null)
 B.Bn=A.a(s([B.uP,B.kH]),t.p)
@@ -64414,7 +64414,7 @@ B.k_=new A.j(786989)
 B.k0=new A.j(786990)
 B.k1=new A.j(786994)
 B.Ee=new A.b4(269,{Abort:B.tl,Again:B.iF,AltLeft:B.bA,AltRight:B.bC,ArrowDown:B.i2,ArrowLeft:B.i1,ArrowRight:B.i0,ArrowUp:B.i3,AudioVolumeDown:B.iN,AudioVolumeMute:B.iL,AudioVolumeUp:B.iM,Backquote:B.hD,Backslash:B.hA,Backspace:B.ht,BassBoost:B.jv,BracketLeft:B.hy,BracketRight:B.hz,BrightnessAuto:B.jb,BrightnessDown:B.j7,BrightnessMaximum:B.ja,BrightnessMinimum:B.j9,BrightnessToggle:B.j8,BrightnessUp:B.j6,BrowserBack:B.jV,BrowserFavorites:B.jZ,BrowserForward:B.jW,BrowserHome:B.jU,BrowserRefresh:B.jY,BrowserSearch:B.jT,BrowserStop:B.jX,CapsLock:B.cS,ChannelDown:B.jj,ChannelUp:B.ji,Close:B.jQ,ClosedCaptionToggle:B.j5,Comma:B.hE,ContextMenu:B.im,ControlLeft:B.by,ControlRight:B.c5,Convert:B.iS,Copy:B.iI,Cut:B.iH,Delete:B.hY,Digit0:B.hq,Digit1:B.hh,Digit2:B.hi,Digit3:B.hj,Digit4:B.hk,Digit5:B.hl,Digit6:B.hm,Digit7:B.hn,Digit8:B.ho,Digit9:B.hp,DisplayToggleIntExt:B.j3,Eject:B.js,End:B.hZ,Enter:B.hr,Equal:B.hx,Escape:B.hs,Exit:B.jh,F1:B.hH,F10:B.hQ,F11:B.hR,F12:B.hS,F13:B.iq,F14:B.ir,F15:B.is,F16:B.it,F17:B.iu,F18:B.iv,F19:B.iw,F2:B.hI,F20:B.ix,F21:B.iy,F22:B.iz,F23:B.iA,F24:B.iB,F3:B.hJ,F4:B.hK,F5:B.hL,F6:B.hM,F7:B.hN,F8:B.hO,F9:B.hP,Find:B.iK,Fn:B.cR,FnLock:B.rJ,GameButton1:B.rN,GameButton10:B.rW,GameButton11:B.rX,GameButton12:B.rY,GameButton13:B.rZ,GameButton14:B.t_,GameButton15:B.t0,GameButton16:B.t1,GameButton2:B.rO,GameButton3:B.rP,GameButton4:B.rQ,GameButton5:B.rR,GameButton6:B.rS,GameButton7:B.rT,GameButton8:B.rU,GameButton9:B.rV,GameButtonA:B.t2,GameButtonB:B.t3,GameButtonC:B.t4,GameButtonLeft1:B.t5,GameButtonLeft2:B.t6,GameButtonMode:B.t7,GameButtonRight1:B.t8,GameButtonRight2:B.t9,GameButtonSelect:B.ta,GameButtonStart:B.tb,GameButtonThumbLeft:B.tc,GameButtonThumbRight:B.td,GameButtonX:B.te,GameButtonY:B.tf,GameButtonZ:B.tg,Help:B.iD,Home:B.hW,Hyper:B.rH,Info:B.j4,Insert:B.hV,IntlBackslash:B.il,IntlRo:B.iP,IntlYen:B.iR,KanaMode:B.iQ,KbdIllumDown:B.jd,KbdIllumUp:B.jc,KeyA:B.fS,KeyB:B.fT,KeyC:B.fU,KeyD:B.fV,KeyE:B.fW,KeyF:B.fX,KeyG:B.fY,KeyH:B.fZ,KeyI:B.h_,KeyJ:B.h0,KeyK:B.h1,KeyL:B.h2,KeyM:B.h3,KeyN:B.h4,KeyO:B.h5,KeyP:B.h6,KeyQ:B.h7,KeyR:B.h8,KeyS:B.h9,KeyT:B.ha,KeyU:B.hb,KeyV:B.hc,KeyW:B.hd,KeyX:B.he,KeyY:B.hf,KeyZ:B.hg,KeyboardLayoutSelect:B.k6,Lang1:B.iU,Lang2:B.iV,Lang3:B.iW,Lang4:B.iX,Lang5:B.iY,LaunchApp1:B.jD,LaunchApp2:B.jC,LaunchAssistant:B.jO,LaunchAudioBrowser:B.jN,LaunchCalendar:B.jB,LaunchContacts:B.jA,LaunchControlPanel:B.jH,LaunchDocuments:B.jJ,LaunchInternetBrowser:B.jE,LaunchKeyboardLayout:B.jL,LaunchMail:B.jz,LaunchPhone:B.jf,LaunchScreenSaver:B.jM,LaunchSpreadsheet:B.jy,LaunchWordProcessor:B.jx,LockScreen:B.jG,LogOff:B.jF,MailForward:B.k4,MailReply:B.k3,MailSend:B.k5,MediaFastForward:B.jn,MediaLast:B.je,MediaPause:B.jl,MediaPlay:B.jk,MediaPlayPause:B.jt,MediaRecord:B.jm,MediaRewind:B.jo,MediaSelect:B.jw,MediaStop:B.jr,MediaTrackNext:B.jp,MediaTrackPrevious:B.jq,MetaLeft:B.bB,MetaRight:B.c7,MicrophoneMuteToggle:B.fR,Minus:B.hw,New:B.jP,NonConvert:B.iT,NumLock:B.cU,Numpad0:B.ij,Numpad1:B.i9,Numpad2:B.ia,Numpad3:B.ib,Numpad4:B.ic,Numpad5:B.id,Numpad6:B.ie,Numpad7:B.ig,Numpad8:B.ih,Numpad9:B.ii,NumpadAdd:B.i7,NumpadBackspace:B.tn,NumpadClear:B.tt,NumpadClearEntry:B.tu,NumpadComma:B.iO,NumpadDecimal:B.ik,NumpadDivide:B.i4,NumpadEnter:B.i8,NumpadEqual:B.ip,NumpadMemoryAdd:B.tr,NumpadMemoryClear:B.tq,NumpadMemoryRecall:B.tp,NumpadMemoryStore:B.to,NumpadMemorySubtract:B.ts,NumpadMultiply:B.i5,NumpadParenLeft:B.iZ,NumpadParenRight:B.j_,NumpadSignChange:B.j0,NumpadSubtract:B.i6,Open:B.iC,PageDown:B.i_,PageUp:B.hX,Paste:B.iJ,Pause:B.hU,Period:B.hF,Power:B.io,Print:B.jS,PrintScreen:B.hT,PrivacyScreenToggle:B.fQ,ProgramGuide:B.jg,Props:B.tm,Quote:B.hC,Redo:B.k2,Resume:B.rL,Save:B.jR,ScrollLock:B.cT,Select:B.iE,SelectTask:B.jI,Semicolon:B.hB,ShiftLeft:B.bz,ShiftRight:B.c6,ShowAllWindows:B.k7,Slash:B.hG,Sleep:B.j1,Space:B.hv,SpeechInputToggle:B.ju,SpellCheck:B.jK,Super:B.rI,Suspend:B.rK,Tab:B.hu,Turbo:B.rM,Undo:B.iG,UsbErrorRollOver:B.ti,UsbErrorUndefined:B.tk,UsbPostFail:B.tj,UsbReserved:B.th,WakeUp:B.j2,ZoomIn:B.k_,ZoomOut:B.k0,ZoomToggle:B.k1},B.AG,A.X("b4<n,j>"))
-B.md=A.a(s(["*","+","-",".","/","0","1","2","3","4","5","6","7","8","9","Alt","ArrowDown","ArrowLeft","ArrowRight","ArrowUp","Clear","Control","Delete","End","Enter","Home","Insert","Meta","PageDown","PageUp","Shift"]),t.s)
+B.me=A.a(s(["*","+","-",".","/","0","1","2","3","4","5","6","7","8","9","Alt","ArrowDown","ArrowLeft","ArrowRight","ArrowUp","Clear","Control","Delete","End","Enter","Home","Insert","Meta","PageDown","PageUp","Shift"]),t.s)
 B.AZ=A.a(s([42,null,null,8589935146]),t.Z)
 B.B_=A.a(s([43,null,null,8589935147]),t.Z)
 B.B0=A.a(s([45,null,null,8589935149]),t.Z)
@@ -64446,7 +64446,7 @@ B.Ct=A.a(s([8589934854,8589934854,8589934855,null]),t.Z)
 B.AV=A.a(s([4294968071,null,null,8589935155]),t.Z)
 B.AW=A.a(s([4294968072,null,null,8589935161]),t.Z)
 B.Cu=A.a(s([8589934850,8589934850,8589934851,null]),t.Z)
-B.rl=new A.b4(31,{"*":B.AZ,"+":B.B_,"-":B.B0,".":B.B1,"/":B.B2,"0":B.B3,"1":B.B4,"2":B.B6,"3":B.B7,"4":B.B8,"5":B.B9,"6":B.Ba,"7":B.Bb,"8":B.Bc,"9":B.Bd,Alt:B.Cr,ArrowDown:B.AP,ArrowLeft:B.AQ,ArrowRight:B.AR,ArrowUp:B.AS,Clear:B.AX,Control:B.Cs,Delete:B.AO,End:B.AT,Enter:B.AN,Home:B.AU,Insert:B.AY,Meta:B.Ct,PageDown:B.AV,PageUp:B.AW,Shift:B.Cu},B.md,A.X("b4<n,A<l?>>"))
+B.rl=new A.b4(31,{"*":B.AZ,"+":B.B_,"-":B.B0,".":B.B1,"/":B.B2,"0":B.B3,"1":B.B4,"2":B.B6,"3":B.B7,"4":B.B8,"5":B.B9,"6":B.Ba,"7":B.Bb,"8":B.Bc,"9":B.Bd,Alt:B.Cr,ArrowDown:B.AP,ArrowLeft:B.AQ,ArrowRight:B.AR,ArrowUp:B.AS,Clear:B.AX,Control:B.Cs,Delete:B.AO,End:B.AT,Enter:B.AN,Home:B.AU,Insert:B.AY,Meta:B.Ct,PageDown:B.AV,PageUp:B.AW,Shift:B.Cu},B.me,A.X("b4<n,A<l?>>"))
 B.mA=new A.d(42)
 B.rh=new A.d(8589935146)
 B.Bu=A.a(s([B.mA,null,null,B.rh]),t.L)
@@ -64509,7 +64509,7 @@ B.Bk=A.a(s([B.cI,B.cI,B.dY,null]),t.L)
 B.BF=A.a(s([B.dT,null,null,B.fy]),t.L)
 B.C2=A.a(s([B.dU,null,null,B.fE]),t.L)
 B.Bl=A.a(s([B.cG,B.cG,B.dW,null]),t.L)
-B.Ei=new A.b4(31,{"*":B.Bu,"+":B.Bv,"-":B.Bw,".":B.Bx,"/":B.By,"0":B.Ci,"1":B.Cj,"2":B.Ck,"3":B.Cl,"4":B.Cm,"5":B.Cn,"6":B.Co,"7":B.Cp,"8":B.BG,"9":B.BH,Alt:B.Bi,ArrowDown:B.BA,ArrowLeft:B.BB,ArrowRight:B.BC,ArrowUp:B.AM,Clear:B.Bf,Control:B.Bj,Delete:B.Br,End:B.BD,Enter:B.BO,Home:B.BE,Insert:B.Bg,Meta:B.Bk,PageDown:B.BF,PageUp:B.C2,Shift:B.Bl},B.md,A.X("b4<n,A<d?>>"))
+B.Ei=new A.b4(31,{"*":B.Bu,"+":B.Bv,"-":B.Bw,".":B.Bx,"/":B.By,"0":B.Ci,"1":B.Cj,"2":B.Ck,"3":B.Cl,"4":B.Cm,"5":B.Cn,"6":B.Co,"7":B.Cp,"8":B.BG,"9":B.BH,Alt:B.Bi,ArrowDown:B.BA,ArrowLeft:B.BB,ArrowRight:B.BC,ArrowUp:B.AM,Clear:B.Bf,Control:B.Bj,Delete:B.Br,End:B.BD,Enter:B.BO,Home:B.BE,Insert:B.Bg,Meta:B.Bk,PageDown:B.BF,PageUp:B.C2,Shift:B.Bl},B.me,A.X("b4<n,A<d?>>"))
 B.C5=A.a(s(["mode"]),t.s)
 B.dZ=new A.b4(1,{mode:"basic"},B.C5,t.li)
 B.Bs=A.a(s(["Abort","Again","AltLeft","AltRight","ArrowDown","ArrowLeft","ArrowRight","ArrowUp","AudioVolumeDown","AudioVolumeMute","AudioVolumeUp","Backquote","Backslash","Backspace","BassBoost","BracketLeft","BracketRight","BrightnessAuto","BrightnessDown","BrightnessMaximum","BrightnessMinimum","BrightnessToggle","BrightnessUp","BrowserBack","BrowserFavorites","BrowserForward","BrowserHome","BrowserRefresh","BrowserSearch","BrowserStop","CapsLock","ChannelDown","ChannelUp","Close","ClosedCaptionToggle","Comma","ContextMenu","ControlLeft","ControlRight","Convert","Copy","Cut","Delete","Digit0","Digit1","Digit2","Digit3","Digit4","Digit5","Digit6","Digit7","Digit8","Digit9","DisplayToggleIntExt","Eject","End","Enter","Equal","Escape","Exit","F1","F10","F11","F12","F13","F14","F15","F16","F17","F18","F19","F2","F20","F21","F22","F23","F24","F3","F4","F5","F6","F7","F8","F9","Find","Fn","FnLock","GameButton1","GameButton10","GameButton11","GameButton12","GameButton13","GameButton14","GameButton15","GameButton16","GameButton2","GameButton3","GameButton4","GameButton5","GameButton6","GameButton7","GameButton8","GameButton9","GameButtonA","GameButtonB","GameButtonC","GameButtonLeft1","GameButtonLeft2","GameButtonMode","GameButtonRight1","GameButtonRight2","GameButtonSelect","GameButtonStart","GameButtonThumbLeft","GameButtonThumbRight","GameButtonX","GameButtonY","GameButtonZ","Help","Home","Hyper","Info","Insert","IntlBackslash","IntlRo","IntlYen","KanaMode","KbdIllumDown","KbdIllumUp","KeyA","KeyB","KeyC","KeyD","KeyE","KeyF","KeyG","KeyH","KeyI","KeyJ","KeyK","KeyL","KeyM","KeyN","KeyO","KeyP","KeyQ","KeyR","KeyS","KeyT","KeyU","KeyV","KeyW","KeyX","KeyY","KeyZ","KeyboardLayoutSelect","Lang1","Lang2","Lang3","Lang4","Lang5","LaunchApp1","LaunchApp2","LaunchAssistant","LaunchAudioBrowser","LaunchCalendar","LaunchContacts","LaunchControlPanel","LaunchDocuments","LaunchInternetBrowser","LaunchKeyboardLayout","LaunchMail","LaunchPhone","LaunchScreenSaver","LaunchSpreadsheet","LaunchWordProcessor","LockScreen","LogOff","MailForward","MailReply","MailSend","MediaFastForward","MediaLast","MediaPause","MediaPlay","MediaPlayPause","MediaRecord","MediaRewind","MediaSelect","MediaStop","MediaTrackNext","MediaTrackPrevious","MetaLeft","MetaRight","Minus","New","NonConvert","NumLock","Numpad0","Numpad1","Numpad2","Numpad3","Numpad4","Numpad5","Numpad6","Numpad7","Numpad8","Numpad9","NumpadAdd","NumpadBackspace","NumpadClear","NumpadClearEntry","NumpadComma","NumpadDecimal","NumpadDivide","NumpadEnter","NumpadEqual","NumpadMemoryAdd","NumpadMemoryClear","NumpadMemoryRecall","NumpadMemoryStore","NumpadMemorySubtract","NumpadMultiply","NumpadParenLeft","NumpadParenRight","NumpadSignChange","NumpadSubtract","Open","PageDown","PageUp","Paste","Pause","Period","Power","Print","PrintScreen","PrivacyScreenToggle","ProgramGuide","Props","Quote","Redo","Resume","Save","ScrollLock","Select","SelectTask","Semicolon","ShiftLeft","ShiftRight","ShowAllWindows","Slash","Sleep","Space","SpeechInputToggle","SpellCheck","Super","Suspend","Tab","Turbo","Undo","UsbErrorRollOver","UsbErrorUndefined","UsbPostFail","UsbReserved","WakeUp","ZoomIn","ZoomOut","ZoomToggle"]),t.s)
